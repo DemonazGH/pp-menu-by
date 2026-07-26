@@ -63,7 +63,7 @@ const recipes: Record<string, Meal> = {
     fiber: 10.5,
     time: 5,
     brand: "TEOS + семена чиа",
-    image: "/images/oatmeal-berries.webp",
+    image: "images/oatmeal-berries.webp",
     ingredients: [
       "Семена чиа — 20 г",
       "Йогурт TEOS натуральный 2% — 150 г",
@@ -115,7 +115,7 @@ const recipes: Record<string, Meal> = {
     carbs: 40,
     fiber: 5,
     time: 40,
-    image: "/images/cottage-cream.webp",
+    image: "images/cottage-cream.webp",
     ingredients: [
       "Творог 5% — 180 г",
       "Яйцо — 1 шт.",
@@ -193,7 +193,7 @@ const recipes: Record<string, Meal> = {
     carbs: 56,
     fiber: 9,
     time: 25,
-    image: "/images/chicken-buckwheat.webp",
+    image: "images/chicken-buckwheat.webp",
     ingredients: [
       "Куриная грудка — 180 г",
       "Гречка сухая — 70 г",
@@ -321,7 +321,7 @@ const recipes: Record<string, Meal> = {
     fiber: 4,
     time: 3,
     brand: "Савушкин 0,1%",
-    image: "/images/cottage-cream.webp",
+    image: "images/cottage-cream.webp",
     ingredients: [
       "Творог мягкий Савушкин 0,1% — 125 г",
       "Ягоды — 100 г",
