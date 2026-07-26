@@ -225,6 +225,7 @@ a:focus-visible {
   justify-content: center;
   min-height: 54px;
   padding: 0 24px;
+  text-decoration: none;
   transition: background 180ms ease-out, box-shadow 180ms ease-out, transform 180ms ease-out;
 }
 
@@ -762,6 +763,93 @@ a:focus-visible {
 }
 
 .fresh-note strong {
+  color: var(--ink);
+}
+
+.products-section {
+  padding-bottom: 54px;
+  padding-top: 96px;
+}
+
+.product-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.product-card {
+  background: linear-gradient(160deg, #ffffff, #f7fcfa);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  min-height: 230px;
+  padding: 22px;
+  position: relative;
+}
+
+.product-badge {
+  background: #e4f5ee;
+  border-radius: 999px;
+  color: var(--green-dark);
+  display: inline-flex;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 6px 8px;
+  text-transform: uppercase;
+}
+
+.product-card h3 {
+  font-size: 15px;
+  line-height: 1.35;
+  margin: 15px 0 12px;
+  min-height: 41px;
+}
+
+.product-card > strong {
+  color: var(--green-dark);
+  display: block;
+  font-size: 30px;
+  letter-spacing: -1px;
+}
+
+.product-card > strong small {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 0;
+}
+
+.product-macros {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 14px;
+}
+
+.product-macros span {
+  align-items: center;
+  background: white;
+  border: 1px solid #e3ece8;
+  border-radius: 9px;
+  color: var(--muted);
+  display: flex;
+  font-size: 9px;
+  gap: 4px;
+  justify-content: center;
+  padding: 7px 4px;
+}
+
+.product-macros b {
+  color: var(--ink);
+}
+
+.product-card p {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 14px 0 0;
+}
+
+.product-card p b {
   color: var(--ink);
 }
 
@@ -1322,6 +1410,10 @@ footer > span {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .shopping-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1495,6 +1587,14 @@ footer > span {
 
   .recipe-grid {
     grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    min-height: 0;
   }
 
   .shopping-section {
